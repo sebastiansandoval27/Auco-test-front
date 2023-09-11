@@ -1,3 +1,4 @@
+import Footer from "./Footer"
 import Header from "./Header"
 
 interface Props {
@@ -11,7 +12,11 @@ const LayoutComp = ({
 }) => {
   return (
     <div className="w-screen flex flex-col items-center justify-start">
-      <Header pageTitle="Auco" />
+      <Header pageTitle="Auco" backgroundColor="light" />
+      <div className="w-full flex flex-col items-center justify-start">
+        {children}
+        </div>
+      <Footer pageFooter="© 2023 - Sebastian Sandoval" />
     </div>
   )
 }
