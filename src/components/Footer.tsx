@@ -12,7 +12,7 @@ const Footer = ({
 }:Props) => {
   return (
     <div className={classnames([
-      'h-14 w-screen flex justify-center items-center fixed bottom-0 border-t-2 border-primary-dark',
+      'h-14 w-screen flex justify-center items-center border-t-2 border-primary-dark fixed bottom-0',
       backgroundColor === 'dark' ? 'bg-primary-100' : 'bg-white'
     ])}>
       <div className={
