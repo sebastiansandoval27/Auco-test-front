@@ -1,5 +1,5 @@
 'use client'
-import LayoutComp from '@/components/LayoutComp'
+import LayoutComp from '@/components/basic/LayoutComp'
 import Image from 'next/image'
 import React from 'react'
 
@@ -8,7 +8,7 @@ const Personal = () => {
   
   return (
     <LayoutComp>
-      <div className="w-full flex flex-col items-center justify-center p-3 lg:w-2/3 pb-10">
+      <div className="w-full flex flex-col items-center justify-center p-3 lg:w-2/3 pb-20">
         <h3>Juan Sebastian Sandoval Sierra</h3>
         <span className="text-stone-400">Software Developer</span>
         <hr className="w-full border-t-2 border-stone-500 border-opacity-40 my-4" />

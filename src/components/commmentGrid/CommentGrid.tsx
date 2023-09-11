@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react'
-import Comment from './Comment';
+import Comment from '../Comment';
 import './CommentGrid.css'
 
 interface Props {

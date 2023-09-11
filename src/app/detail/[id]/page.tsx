@@ -1,9 +1,9 @@
 'use client'
 
 import Comment from '@/components/Comment'
-import CommentsGrid from '@/components/CommentGrid'
-import LayoutComp from '@/components/LayoutComp'
-import Loader from '@/components/Loader'
+import CommentsGrid from '@/components/commmentGrid/CommentGrid'
+import LayoutComp from '@/components/basic/LayoutComp'
+import Loader from '@/components/basic/Loader'
 import Post from '@/components/Post'
 import useGetPost from '@/hooks/useGetPost'
 import { useEffect } from 'react'
@@ -29,7 +29,7 @@ const Detail = ({ params }: { params: { id: string } }) => {
         image="/photo1.webp"
         onClick={() => {}}
       />
-      <div className="mt-2 flex flex-col justify-center items-center w-full lg:w-3/4 mx-auto pb-5">
+      <div className="mt-2 flex flex-col justify-center items-center w-full lg:w-3/4 mx-auto pb-20">
         <h3 className="text-black font-extrabold text-lg text-left">
           Comentarios
         </h3>

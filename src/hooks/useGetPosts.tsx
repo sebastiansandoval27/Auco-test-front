@@ -1,5 +1,5 @@
 import { Post } from '@/types/post';
-import axios from 'axios';
+import RestClient from '@/api/RestClient';
 import { useEffect, useState } from 'react'
 
 const useGetPosts = () => {
@@ -10,7 +10,7 @@ const useGetPosts = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get<Post[]>(`https://jsonplaceholder.typicode.com/posts`);
+        const response = await RestClient.get<Post[]>(`https://jsonplaceholder.typicode.com/posts`);
         setPosts(response?.data || []);
         setIsLoading(false)
       } catch (error) {

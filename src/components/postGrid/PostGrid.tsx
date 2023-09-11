@@ -2,7 +2,7 @@
 
 import { Post } from '@/types/post'
 import React from 'react'
-import PostComp from './Post'
+import PostComp from '../Post'
 import { useRouter } from 'next/navigation'
 import './postGrid.css'
 

@@ -1,11 +1,11 @@
 'use client';
 
-import Layout from '@/components/LayoutComp'
+import Layout from '@/components/basic/LayoutComp'
 import axios from 'axios'
-import PostGrid from '@/components/PostGrid'
+import PostGrid from '@/components/postGrid/PostGrid'
 import React, { useEffect, useState } from 'react'
 import { Post } from '@/types/post';
-import Loader from '@/components/Loader';
+import Loader from '@/components/basic/Loader';
 import useGetPosts from '@/hooks/useGetPosts';
 import PostComp from '@/components/Post';
 
