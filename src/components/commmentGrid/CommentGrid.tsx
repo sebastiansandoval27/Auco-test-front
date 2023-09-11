@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Comment from '../Comment';
-import './CommentGrid.css'
+import './commentGrid.css'
 
 interface Props {
   comments: Comment[]
