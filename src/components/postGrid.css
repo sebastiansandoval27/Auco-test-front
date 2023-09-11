@@ -1,0 +1,22 @@
+.grid-temp {
+  display: grid;
+  grid-template-columns: repeat(1, 21.875rem);
+  grid-gap: 1rem;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.5625rem;
+}
+
+@media (min-width: 768px) {
+  .grid-temp {
+    grid-template-columns: repeat(2, 21.875rem);
+  }
+}
+
+@media (min-width: 1224px) {
+  .grid-temp {
+    grid-template-columns: repeat(3, 21.875rem);
+  }
+}

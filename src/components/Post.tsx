@@ -11,11 +11,11 @@ interface Props {
 
 const Post = ({ title, body, category, image, onClick }: Props) => {
   return (
-    <article className="w-[21.875rem] min-h-[18.75rem] bg-white rounded-md overflow-hidden my-2 mx-2 cursor-pointer"
+    <article className="w-[21.875rem] h-[18.75rem] bg-white rounded-md overflow-hidden cursor-pointer"
     onClick={(onClick)}
     >
       <div className="w-[21.875rem] h-[9.0625rem] overflow-hidden relative">
-        <Image src={image} alt={title} fill priority sizes='100vw'/>
+        <Image src={image} alt={`Post image`} fill priority={true} sizes='100%' />
       </div>
       <div className="w-full px-1 py-3">
         <p className="w-full rounded-md px-3 py-1 text-primary-dark bg-slate-200">{category}</p>
